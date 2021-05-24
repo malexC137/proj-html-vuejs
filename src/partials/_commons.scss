@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+section {
+    margin: ($margin*15) 0 ($margin*5);
+}
+
+p, span {
+    color: $color-three;
+}

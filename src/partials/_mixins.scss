@@ -1,0 +1,10 @@
+@mixin space_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin h1_small {
+    font-size: $font-size*3;
+    color: $color-five;
+    margin: $margin*2 0 $margin*3;
+}
