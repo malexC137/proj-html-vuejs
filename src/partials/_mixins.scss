@@ -3,8 +3,20 @@
     justify-content: space-between;
 }
 
+@mixin align_center {
+    display: flex;
+    align-items: center;
+}
+
 @mixin h1_small {
     font-size: $font-size*3;
     color: $color-five;
     margin: $margin*2 0 $margin*3;
 }
+
+@mixin h1_big {
+    margin: $margin*2 0;
+    color: $color-five;
+    font-size: $font-size*4;
+}
+

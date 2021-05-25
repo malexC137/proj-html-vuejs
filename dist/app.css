@@ -10,7 +10,7 @@ html {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -60,7 +60,7 @@ header .hero-text-container {
 header .hero-text-container h1 {
   margin: 20px 0;
   color: #5b2ca2;
-  font-size: 50px;
+  font-size: 40px;
 }
 header .hero-text-container span {
   font-size: 20px;
@@ -141,4 +141,55 @@ header .hero-text-container button {
 .section-3 .slider-container-3 .img-card-3 h4 {
   margin: 20px 0;
   color: #5b2ca2;
+}
+
+.section-4 .row {
+  width: 100%;
+  position: relative;
+}
+.section-4 .row .image-container-4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  filter: contrast(80%) brightness(80%);
+}
+.section-4 .row .image-container-4-top {
+  top: 0;
+  height: 550px;
+  background-image: url("/img/bakery-process-1.jpg");
+  background-size: 140% 120%;
+  background-position-y: -70px;
+}
+.section-4 .row .image-text-card .image-container-4-mid {
+  top: calc(550px + 20px);
+  width: calc(50% - 5px);
+  height: 500px;
+  background-image: url("/img/bakery-process-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 110% 100%;
+  background-position-x: -70px;
+}
+.section-4 .row .row-mid .text-card-4 {
+  position: absolute;
+  top: calc(550px + 20px);
+  left: calc(50% - 5px);
+  width: calc(50% - 5px);
+  height: auto;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  background-color: rgba(189, 162, 243, 0.2);
+}
+.section-4 .row .row-mid .text-card-4 h1 {
+  font-size: 30px;
+  color: #5b2ca2;
+  margin: 20px 0 30px;
+}
+.section-4 .row .image-container-4-bot {
+  top: calc(550px + 500px + 40px);
+  height: 550px;
+  background-image: url("/img/bakery-process-3.jpg");
+  background-size: 120% 110%;
+  background-position-x: -100px;
 }

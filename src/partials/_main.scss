@@ -60,3 +60,233 @@
         }
     }
 }
+
+.section-4 {
+    .row {
+        width: 100%;
+        position: relative;
+        .image-container-4 {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            filter: contrast(80%) brightness(80%);
+        }
+        .image-container-4-top {
+            top: 0;
+            height: 550px;
+            background-image: url("/img/bakery-process-1.jpg");
+            background-size: 140% 120%;
+            background-position-y: -70px;
+        }
+        .image-text-card {
+            .image-container-4-mid {
+                top: calc(550px + 20px);
+                width: calc(50% - 5px);
+                height: 500px;
+                background-image: url("/img/bakery-process-2.jpg");
+                background-repeat: no-repeat;
+                background-size: 110% 100%;
+                background-position-x: -70px;
+            }
+        }
+        .row-mid {
+            .text-card-4 {
+                position: absolute;
+                top: calc(550px + 20px);
+                left: calc(50% - 5px);
+                width: calc(50% - 5px);
+                height: auto;
+                padding: $padding*6 $padding*4;
+                display: flex;
+                flex-direction: column;
+                flex-flow: wrap;
+                background-color: $color-four;
+                h1 {
+                    @include h1_small;
+                }
+            }
+        }
+        .image-container-4-bot {
+            top: calc(550px + 500px + 40px);
+            height: 550px;
+            background-image: url("/img/bakery-process-3.jpg");
+            background-size: 120% 110%;
+            background-position-x: -100px;
+        }
+    }
+}
+
+// .section-4 {
+//     @include space_between;
+//     flex-wrap: wrap;
+//     .img-container-4 {
+//         padding: $padding*4;
+//         color: $color-one;
+//         position: relative;
+//         h1 {
+//             font-size: $font-size*4;
+//             max-width: 500px;
+//         }
+//         .p-number {
+//             position: absolute;
+//             right: 40px;
+//             top: 40px;
+//             font-size: 70px;
+//             color: $color-one;
+//             p {
+//                 filter: contrast(100%) brightness(100%);
+//             }
+//         }
+//         .p-container {
+//             max-width: 400px;
+//             position: absolute;
+//             bottom: 60px;
+//             p {
+//                 margin-bottom: $margin;
+//             }
+//             span {
+//                 color: $color-one;
+//             }
+//         }
+//     }
+//     .img-container-4-top {
+//         width: 100%;
+//         height: 550px;
+//         margin-bottom: $margin*2;
+//         background-image: url("/img/bakery-process-1.jpg");
+//         filter: contrast(80%) brightness(80%);
+//         background-size: 140% 120%;
+//         background-position-y: -70px;
+//         .p-container {
+//             right: 40px;
+//         }
+//     }
+//     .img-card-4 {
+//         width: calc(50% - 5px);
+//         height: 500px;
+//         background-image: url("/img/bakery-process-2.jpg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-size: 110% 100%;
+//         background-position-x: -70px;
+//         .p-container {
+//             max-width: 250px;
+//             bottom: 40px;
+//         }
+//     }
+//     .text-card-4 {
+//         width: calc(50% - 5px);
+//         height: auto;
+//         padding: $padding*6 $padding*4;
+//         display: flex;
+//         flex-direction: column;
+//         flex-flow: wrap;
+//         background-color: $color-four;
+//         h1 {
+//             @include h1_small;
+//         }
+//     }
+//     .img-container-4-bot {
+//         width: 100%;
+//         height: 550px;
+//         margin-top: $margin*2;
+//         background-image: url("/img/bakery-process-3.jpg");
+//         background-size: 120% 110%;
+//         background-position-x: -100px;
+//     }
+    
+// }
+
+// .section-4 {
+//     @include space_between;
+//     flex-wrap: wrap;
+//     .text-image-container-4 {
+//         position: relative;
+//         .img-container-4 { 
+//             width: 100%;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             z-index: 0;
+//             .img-container-4-top {
+//                 width: 100%;
+//                 height: 550px;
+//                 margin-bottom: $margin*2;
+//                 background-image: url("/img/bakery-process-1.jpg");
+//                 filter: contrast(80%) brightness(80%);
+//                 background-size: 140% 120%;
+//                 background-position-y: -70px;
+//                 .p-container {
+//                     right: 40px;
+//                 }
+//             }
+//             .img-card-4 {
+//                 width: calc(50% - 5px);
+//                 height: 500px;
+//                 background-image: url("/img/bakery-process-2.jpg");
+//                 background-size: contain;
+//                 background-repeat: no-repeat;
+//                 background-size: 110% 100%;
+//                 background-position-x: -70px;
+//                 .p-container {
+//                     max-width: 250px;
+//                     bottom: 40px;
+//                 }
+//             }
+//             .text-card-4 {
+//                 width: calc(50% - 5px);
+//                 height: auto;
+//                 padding: $padding*6 $padding*4;
+//                 display: flex;
+//                 flex-direction: column;
+//                 flex-flow: wrap;
+//                 background-color: $color-four;
+//                 h1 {
+//                     @include h1_small;
+//                 }
+//             }
+//             .img-container-4-bot {
+//                 width: 100%;
+//                 height: 550px;
+//                 margin-top: $margin*2;
+//                 background-image: url("/img/bakery-process-3.jpg");
+//                 background-size: 120% 110%;
+//                 background-position-x: -100px;
+//             }
+//         }
+//         .text-container-4 {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             z-index: 999;
+//             padding: $padding*4;
+//         color: $color-one;
+//         position: relative;
+//         h1 {
+//             font-size: $font-size*4;
+//             max-width: 500px;
+//         }
+//         .p-number {
+//             position: absolute;
+//             right: 40px;
+//             top: 40px;
+//             font-size: 70px;
+//             color: $color-one;
+//             p {
+//                 filter: contrast(100%) brightness(100%);
+//             }
+//         }
+//         .p-container {
+//             max-width: 400px;
+//             position: absolute;
+//             bottom: 60px;
+//             p {
+//                 margin-bottom: $margin;
+//             }
+//             span {
+//                 color: $color-one;
+//             }
+//         }
+//         }
+//     }
+// }
