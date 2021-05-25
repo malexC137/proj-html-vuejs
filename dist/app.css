@@ -22,6 +22,11 @@ p, span {
   color: #929295;
 }
 
+h1 {
+  margin: 20px 0 30px;
+  color: #5b2ca2;
+}
+
 header {
   width: 100vw;
   height: 90vh;
@@ -78,11 +83,6 @@ header .hero-text-container button {
   height: 400px;
   padding-right: 30px;
 }
-.section-1 .text-card-1 h1 {
-  font-size: 30px;
-  color: #5b2ca2;
-  margin: 20px 0 30px;
-}
 .section-1 .slider-container-1 {
   width: calc(((100% - 30px) / 3) * 2);
   display: flex;
@@ -97,7 +97,7 @@ header .hero-text-container button {
 }
 .section-2 h1 {
   font-size: 30px;
-  color: #5b2ca2;
+  color: #ffffff;
   margin: 20px 0 30px;
 }
 .section-2 .img-container {
@@ -121,7 +121,7 @@ header .hero-text-container button {
 }
 .section-3 .text-card-3 h1 {
   font-size: 30px;
-  color: #5b2ca2;
+  color: #ffffff;
   margin: 20px 0 30px;
 }
 .section-3 .text-card-3 button {
@@ -148,48 +148,155 @@ header .hero-text-container button {
   position: relative;
 }
 .section-4 .row .image-container-4 {
-  position: absolute;
-  left: 0;
   width: 100%;
-  filter: contrast(80%) brightness(80%);
-}
-.section-4 .row .image-container-4-top {
-  top: 0;
   height: 550px;
+  filter: contrast(60%) brightness(60%);
+  z-index: 0;
+  margin-bottom: 20px;
+}
+.section-4 .row .text-container-4 {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+}
+.section-4 .row .text-container-4 h1 {
+  color: #ffffff;
+  font-size: 40px;
+  width: 500px;
+}
+.section-4 .row .text-container-4 .p-number {
+  font-size: 70px;
+  color: #ffffff;
+  order: 2;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.section-4 .row .text-container-4 .p-container {
+  position: absolute;
+  bottom: 60px;
+  max-width: 400px;
+}
+.section-4 .row .text-container-4 .p-container p {
+  margin-bottom: 10px;
+}
+.section-4 .row .text-container-4 .p-container span {
+  color: #ffffff;
+}
+.section-4 .row-top .image-container-4-top {
   background-image: url("/img/bakery-process-1.jpg");
   background-size: 140% 120%;
   background-position-y: -70px;
 }
-.section-4 .row .image-text-card .image-container-4-mid {
-  top: calc(550px + 20px);
-  width: calc(50% - 5px);
+.section-4 .row-top .text-container-4-top .p-container {
+  right: 60px;
+}
+.section-4 .row-mid .image-container-4-mid {
+  width: calc(50% - 10px);
   height: 500px;
   background-image: url("/img/bakery-process-2.jpg");
-  background-repeat: no-repeat;
-  background-size: 110% 100%;
+  background-size: 115% 100%;
   background-position-x: -70px;
 }
-.section-4 .row .row-mid .text-card-4 {
+.section-4 .row-mid .text-container-4-mid {
+  width: calc(50% - 10px);
+}
+.section-4 .row-mid .text-container-4-mid .p-container {
+  width: 300px;
+}
+.section-4 .row-mid .text-card-4 {
   position: absolute;
-  top: calc(550px + 20px);
-  left: calc(50% - 5px);
-  width: calc(50% - 5px);
-  height: auto;
+  top: 0;
+  right: 0;
+  width: calc(50% - 10px);
+  height: 100%;
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
   background-color: rgba(189, 162, 243, 0.2);
 }
-.section-4 .row .row-mid .text-card-4 h1 {
+.section-4 .row-mid .text-card-4 h1 {
   font-size: 30px;
-  color: #5b2ca2;
+  color: #ffffff;
   margin: 20px 0 30px;
 }
-.section-4 .row .image-container-4-bot {
-  top: calc(550px + 500px + 40px);
-  height: 550px;
+.section-4 .row-bot .image-container-4-bot {
   background-image: url("/img/bakery-process-3.jpg");
   background-size: 120% 110%;
   background-position-x: -100px;
+}
+
+.section-5 {
+  text-align: center;
+}
+.section-5 .row-5 {
+  width: 100%;
+  display: flex;
+}
+.section-5 .row-5 .img-container-5-righ {
+  background-color: rgba(240, 202, 161, 0.2);
+}
+.section-5 .row-5 .img-container-5-left {
+  background-color: #f2f9fb;
+}
+.section-5 .row-5 .contacts-container-5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.section-6 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.section-6 img {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+}
+.section-6 .social-container-6 {
+  width: 48.7%;
+  background-color: rgba(189, 162, 243, 0.2);
+  margin: 0 10px 20px 10px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-7 {
+  position: relative;
+}
+.section-7 .img-container-7 {
+  width: 100%;
+  height: 380px;
+  background-image: url("/img/call-to-action-bg.jpg");
+  background-size: 115% 100%;
+  background-position-x: -90px;
+  filter: contrast(100%) brightness(90%);
+  z-index: 0;
+}
+.section-7 .text-container-7 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 250px;
+}
+.section-7 .text-container-7 h1 {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 20px 0 30px;
+  width: 450px;
 }

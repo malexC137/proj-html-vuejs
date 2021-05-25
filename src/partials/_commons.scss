@@ -21,3 +21,8 @@ section {
 p, span {
     color: $color-three;
 }
+
+h1 {
+    margin: $margin*2 0 $margin*3;
+    color: $color-five;
+}
