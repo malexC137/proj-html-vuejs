@@ -20,9 +20,25 @@ section {
 
 p, span {
     color: $color-three;
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    font-size: $font-size;
+    text-transform: uppercase;
+}
+
+
+li {
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: $padding;
+    &:hover {
+        border-bottom: solid 1px $color-five;
+    }
 }
 
 h1 {
+    font-family: 'Lora', serif;
     margin: $margin*2 0 $margin*3;
     color: $color-five;
 }
@@ -42,4 +58,13 @@ h1 {
 }
 .chevron-left {
     left: 0;
+}
+
+ul {
+    display: flex;
+        list-style: none;
+        color: $color-five;
+        li {
+            margin-right: $margin*2;
+        }
 }

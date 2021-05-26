@@ -23,11 +23,31 @@
     h1 {
         @include h1_small
     }
-    .img-container {
+    .img-container-2 {
         @include space-between;
-        img {
+        position: relative;
+        .img-card-2-hover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                display: inline-block;
+            }
+        }
+        .img-card-2 {
             margin-top: $margin*2;
             width: calc((100% - 80px) / 2);
+            z-index: 999;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                display: none;
+            }
         }
     }
 }

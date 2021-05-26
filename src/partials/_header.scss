@@ -1,6 +1,6 @@
 header {
     width: 100vw;
-    height: 90vh;
+    height: 900px;
     background-image: url("/img/hero-header-bakery.jpg");
     background-size: 110% 110%;
     background-position-y: -70px;
@@ -19,13 +19,6 @@ header {
         }
         .distancer {
             flex-grow: 1;
-        }
-        ul {
-            display: flex;
-            list-style: none;
-            li {
-                margin-left: $margin;
-            }
         }
     }
     .hero-text-container {
