@@ -8,8 +8,12 @@
     .slider-container-1 {
         width: calc(((100% - 30px) / 3) * 2);
         @include space-between;
-        img {
+        .img-container-1 {
             width: calc((100% - 30px) /2);
+            position: relative;
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -34,9 +38,11 @@
     text-align: center;
     .text-card-3 {
         width: calc(100% / 4);
+        height: 100%;
         margin-right: $margin*5;
         h1 {
-            @include h1_small
+            @include h1_small;
+            color: $color-five;
         }
         button {
             margin-top: $margin*2;
@@ -45,7 +51,9 @@
     .slider-container-3 {
         width: ((100% / 4) * 3);
         @include space-between;
+        align-items: center;
         .img-card-3 {
+            position: relative;
             width: calc((100% - 60px) / 4);
             img {
                 width: 100%;
@@ -140,6 +148,7 @@
             background-color: $color-four;
             h1 {
                 @include h1_small;
+                color: $color-five;
             }
         }
     }
@@ -195,6 +204,7 @@
 
 .section-7 {
     position: relative;
+    margin-bottom: 0;
     .img-container-7 {
         width: 100%;
         height: 380px;

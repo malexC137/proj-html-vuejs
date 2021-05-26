@@ -26,3 +26,20 @@ h1 {
     margin: $margin*2 0 $margin*3;
     color: $color-five;
 }
+
+.chevron-container {
+    width: 30px;
+    height: 60px;
+    background-color: $color-eight;
+    color: $color-one;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chevron-left {
+    left: 0;
+}

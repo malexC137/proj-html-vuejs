@@ -1,0 +1,22 @@
+.button-one {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: $color-one;
+    background-color: $color-five;
+    &:hover {
+        background-color: $color-four;
+        color: $color-five;
+    }
+}
+
+.button-two {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: $color-five;
+    background-color: $color-one;
+    &:hover {
+        background-color: $color-four;
+    }
+}

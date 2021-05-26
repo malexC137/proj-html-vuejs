@@ -27,6 +27,24 @@ h1 {
   color: #5b2ca2;
 }
 
+.chevron-container {
+  width: 30px;
+  height: 60px;
+  background-color: rgba(91, 44, 162, 0.5);
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron-left {
+  left: 0;
+}
+
 header {
   width: 100vw;
   height: 90vh;
@@ -88,8 +106,12 @@ header .hero-text-container button {
   display: flex;
   justify-content: space-between;
 }
-.section-1 .slider-container-1 img {
+.section-1 .slider-container-1 .img-container-1 {
   width: calc((100% - 30px) /2);
+  position: relative;
+}
+.section-1 .slider-container-1 .img-container-1 img {
+  width: 100%;
 }
 
 .section-2 {
@@ -117,12 +139,14 @@ header .hero-text-container button {
 }
 .section-3 .text-card-3 {
   width: calc(100% / 4);
+  height: 100%;
   margin-right: 50px;
 }
 .section-3 .text-card-3 h1 {
   font-size: 30px;
   color: #ffffff;
   margin: 20px 0 30px;
+  color: #5b2ca2;
 }
 .section-3 .text-card-3 button {
   margin-top: 20px;
@@ -131,8 +155,10 @@ header .hero-text-container button {
   width: 75%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .section-3 .slider-container-3 .img-card-3 {
+  position: relative;
   width: calc((100% - 60px) / 4);
 }
 .section-3 .slider-container-3 .img-card-3 img {
@@ -222,6 +248,7 @@ header .hero-text-container button {
   font-size: 30px;
   color: #ffffff;
   margin: 20px 0 30px;
+  color: #5b2ca2;
 }
 .section-4 .row-bot .image-container-4-bot {
   background-image: url("/img/bakery-process-3.jpg");
@@ -272,6 +299,7 @@ header .hero-text-container button {
 
 .section-7 {
   position: relative;
+  margin-bottom: 0;
 }
 .section-7 .img-container-7 {
   width: 100%;
@@ -299,4 +327,78 @@ header .hero-text-container button {
   color: #ffffff;
   margin: 20px 0 30px;
   width: 450px;
+}
+
+footer {
+  padding: 100px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+footer .footer-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+footer .footer-left {
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-left img {
+  width: 180px;
+}
+footer .footer-left ul {
+  display: flex;
+  list-style: none;
+  color: #5b2ca2;
+}
+footer .footer-left ul li {
+  margin-right: 20px;
+}
+footer .footer-left ul p {
+  background-color: rgba(189, 162, 243, 0.2);
+  padding: 0 8px;
+  border-radius: 10px;
+  margin-left: -15px;
+}
+footer .footer-right {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #5b2ca2;
+}
+footer .footer-right .email-input input {
+  height: 100%;
+  width: 300px;
+  border: solid 1px #eeeeee;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+footer .footer-right .social-container-footer i {
+  font-size: 20px;
+  width: 50px;
+}
+
+.button-one {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #5b2ca2;
+}
+.button-one:hover {
+  background-color: rgba(189, 162, 243, 0.2);
+  color: #5b2ca2;
+}
+
+.button-two {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #5b2ca2;
+  background-color: #ffffff;
+}
+.button-two:hover {
+  background-color: rgba(189, 162, 243, 0.2);
 }
