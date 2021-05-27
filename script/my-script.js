@@ -4,28 +4,52 @@ new Vue({
         headerLinks: [{
             text: "Home",
             link: "#"
-        },{
+        }, {
             text: "Shop",
-            link: "#"
-        },{
+            link: "#",
+            childs: [{
+                text: "Bakery",
+                link: "#"
+            }, {
+                text: "Pastry",
+                link: "#"
+            },{
+                text: "Book an event",
+                link: "#"
+            }]
+        }, {
             text: "About",
             link: "#"
-        },{
+        }, {
             text: "Gallery",
             link: "#"
-        },{
+        }, {
             text: "Locations",
-            link: "#"
-        },{
+            link: "#",
+            childs: [{
+                text: "New York",
+                link: "#"
+            }, {
+                text: "London",
+                link: "#"
+            }]
+        }, {
             text: "Journal",
             link: "#"
-        },{
+        }, {
             text: "Contact",
-            link: "#"
-        },{
+            link: "#",
+            childs: [{
+                text: "Tel. 1234567890",
+                link: "#"
+            }, {
+                text: "e-mail info@avada.com",
+                link: "#"
+            }]
+        }, {
             text: "Orders",
             link: "#"
-        },{
+        }, {
             text: "My Account",
             link: "#"
         }],

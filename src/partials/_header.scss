@@ -19,6 +19,16 @@ header {
         .distancer {
             flex-grow: 1;
         }
+        ul {
+            li {
+                position: relative;
+                &:hover {
+                    .dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
     .hero-text-container {
         width: calc(100% / 3);

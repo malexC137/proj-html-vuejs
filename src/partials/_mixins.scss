@@ -20,6 +20,11 @@
     top: 0;
 }
 
+@mixin relative_top {
+    position: relative;
+    top: 0;
+} 
+
 //////////////////// - FLEXBOX - ///////////////////
 
 @mixin align_center {

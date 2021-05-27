@@ -4,13 +4,13 @@
     .text-card-1 {
         width: calc((100% - 30px) / 3);
         height: 400px;
-        padding-right: $spacing*3;
+        padding-right: $spacing*2;
     }
     .slider-container-1 {
         width: calc(((100% - 30px) / 3) * 2);
         @include space-between;
         .img-container-1 {
-            width: calc((100% - 30px) /2);
+            width: calc((100% - 30px) / 2);
             position: relative;
             top: 0;
             img {
@@ -18,18 +18,18 @@
             }
             .text-container-hover {
                 .text-card-slider-hover {
-                h1 {
-                    margin-bottom: $spacing;
-                    color: $color-one;
-                }
-                span {
-                    color: $color-one;
-                }
-                p {
-                    font-size: 20px;
-                    margin-top: $spacing*1.5;
-                    color: $color-one;
-                }
+                    h1 {
+                        margin-bottom: $spacing;
+                        color: $color-one;
+                    }
+                    span {
+                        color: $color-one;
+                    }
+                    p {
+                        font-size: 20px;
+                        margin-top: $spacing*1.5;
+                        color: $color-one;
+                    }
                 }
             }
             &:hover {
@@ -48,13 +48,11 @@
     text-align: center;
     .img-container-2 {
         @include space-between;
-        position: relative;
-        top: 0;
+        @include relative_top;
         .img-card-2 {
             margin-top: $spacing*2;
             width: calc((100% - 80px) / 2);
-            position: relative;
-            top: 0;
+            @include relative_top;
             &:hover {
                 .img-2 {
                     display: none;
@@ -106,7 +104,6 @@
         height: 100%;
         margin-right: $spacing*5;
         h1 {
-            @include h1_small;
             color: $color-five;
         }
         button {

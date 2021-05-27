@@ -14,34 +14,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-
-    <title>Bakery</title>
+    <title>Avada Bakery</title>
 </head>
 
 <body>
     <div id="app">
         <div class="fixed-container">
-            <div class="fixed-button">
-                <img src="img/screenshot copia.png" alt="">
-                <h6>Demos</h6>
-            </div>
-            <div class="fixed-button">
-                <h4>$</h4>
-                <h2>39</h2>
-                <h6>On Sale</h6>
-            </div>
+            <a href="javascript:void(0)">
+                <div class="fixed-button">
+                    <img src="img/screenshot copia.png" alt="">
+                    <h6>Demos</h6>
+                </div>
+            </a>
+            <a href="javascript:void(0)">
+                <div class="fixed-button">
+                    <h4>$</h4>
+                    <h2>39</h2>
+                    <h6>On Sale</h6>
+                </div>
+            </a>
         </div>
+        <!-- ----------------------------------- HEADER ------------------------------------------>
         <header>
             <div class="container">
-
                 <div class="navbar">
                     <div class="logo-container">
                         <img src="img/avada-bakery-logo-retina-200x97.png" alt="">
                     </div>
                     <div class="distancer"></div>
                     <ul>
-                        <li v-for="element in fullHeaderLinks"> {{element.text}} </li>
-                        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                        <li v-for="element in fullHeaderLinks">
+                            <a :href="element.link" v-if="element.link"> {{element.text}} </a>
+
+                            <div class="dropdown" v-if="element.childs">
+                                <ul>
+                                    <li v-for="child in element.childs">
+                                        <a :href="child.link" v-if="child.link">
+                                            {{ child.text }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="hero-text-container">
@@ -55,9 +74,10 @@
                 </div>
             </div>
         </header>
-
+        <!-- ----------------------------------- MAIN ------------------------------------------>
         <main>
             <div class="container">
+                <!-- ----------------------------------- SECTION 1 ------------------------------------------>
                 <section class="section-1">
                     <div class="text-card-1">
                         <p>Our products</p>
@@ -70,9 +90,11 @@
                     </div>
                     <div class="slider-container-1">
                         <div class="img-container-1">
-                            <div class="chevron-container chevron-left">
-                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
+                            <a href="javascript:void(0)">
+                                <div class="chevron-container chevron-left">
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </div>
+                            </a>
                             <img src="img/choco-chip-cookies-400x510.jpg" alt="">
                             <div class="text-container-hover">
                                 <div class="text-card-slider-hover">
@@ -91,12 +113,15 @@
                                     <p><b>$24.00 $62.00</b></p>
                                 </div>
                             </div>
-                            <div class="chevron-container chevron-right">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                            </div>
+                            <a href="javascript:void(0)">
+                                <div class="chevron-container chevron-right">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </section>
+                <!-- ----------------------------------- SECTION 2 ------------------------------------------>
                 <section class="section-2">
                     <p>Corporate & wedding</p>
                     <h1>Baking special moments</h1>
@@ -125,21 +150,24 @@
                         </div>
                     </div>
                 </section>
+                <!-- ----------------------------------- SECTION 3 ------------------------------------------>
                 <section class="section-3">
                     <div class="text-card-3">
                         <h1>Find a freshly baked product perfect for you</h1>
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit possimus
                             accusamus
-                            alias, dolorem perferendis?
                         </span>
                         <br>
                         <button class="button-one"><b>Shop All Products</b></button>
                     </div>
                     <div class="slider-container-3">
                         <div class="img-card-3">
-                            <div class="chevron-container chevron-left">
-                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
+                            <a href="javascript:void(0)">
+                                <div class="chevron-container chevron-left">
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </div>
+                            </a>
+
                             <img src="img/choco-chip-cookies-235x300.jpg" alt="">
                             <h4>Choco Chip Cookies</h4>
                             <span>$19.00 - $39.00</span>
@@ -170,9 +198,12 @@
                             </div>
                         </div>
                         <div class="img-card-3">
-                            <div class="chevron-container chevron-right">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                            </div>
+                            <a href="javascript:void(0)">
+                                <div class="chevron-container chevron-right">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+
                             <img src="img/perfect-macarons-200x255.jpg" alt="">
                             <h4>Perfect Macarons</h4>
                             <span>$18.00 - $52.00</span>
@@ -184,6 +215,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- ----------------------------------- SECTION 4 ------------------------------------------>
                 <section class="section-4">
                     <div class="row row-top">
                         <div class="image-container-4 image-container-4-top"></div>
@@ -245,6 +277,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- ----------------------------------- SECTION 5 ------------------------------------------>
                 <section class="section-5">
                     <p>Locations</p>
                     <h1>Visit our Bakeries</h1>
@@ -281,6 +314,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- ----------------------------------- SECTION 6 ------------------------------------------>
                 <section class="section-6">
                     <img src="img/social-1.jpg" alt="">
                     <div class="social-container-6">
@@ -298,6 +332,7 @@
                     <img src="img/social-6.jpg" alt="">
                 </section>
             </div>
+            <!-- ----------------------------------- SECTION 7 ------------------------------------------>
             <section class="section-7">
                 <div class="img-container-7"></div>
                 <div class="text-container-7">
@@ -307,14 +342,27 @@
                 </div>
             </section>
         </main>
-
+        <!-- ----------------------------------- FOOTER ------------------------------------------>
         <footer>
             <div class="footer-container footer-left">
                 <img src="/img/avada-bakery-logo-retina-200x97.png" alt="">
                 <ul>
-                    <li v-for="element in fullFooterLinks"> {{element.text}} </li>
-                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-                    <p>0</p>
+                    <li v-for="element in fullFooterLinks">
+                        <a :href="element.link" v-if="element.link"> {{element.text}} </a>
+
+                        <div class="dropdown" v-if="element.childs">
+                            <ul>
+                                <li v-for="child in element.childs">
+                                    <a :href="child.link" v-if="child.link">
+                                        {{ child.text }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span>0</span>
+                    </li>
                 </ul>
                 <p>© Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
             </div>
@@ -338,7 +386,6 @@
             </div>
         </footer>
     </div>
-
     <script src="script/my-script.js"></script>
 </body>
 
