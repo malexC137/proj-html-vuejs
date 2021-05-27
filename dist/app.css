@@ -502,6 +502,7 @@ footer .footer-left ul p {
 footer .footer-right {
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
   color: #5b2ca2;
 }
 footer .footer-right .email-input input {
@@ -515,6 +516,18 @@ footer .footer-right .email-input input {
 footer .footer-right .social-container-footer i {
   font-size: 20px;
   width: 50px;
+}
+footer .footer-right .button-scroll-top {
+  position: absolute;
+  background-color: #282d2c;
+  color: #ffffff;
+  border-radius: 5px;
+  bottom: -80px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-one {

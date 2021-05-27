@@ -43,9 +43,15 @@
 }
 
 @mixin start_space_around {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+@mixin center_x_y {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
