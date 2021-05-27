@@ -1,5 +1,5 @@
 .button-one {
-    padding: 10px 20px;
+    padding: $spacing $spacing*2;
     border: none;
     border-radius: 5px;
     color: $color-one;
@@ -11,7 +11,7 @@
 }
 
 .button-two {
-    padding: 10px 20px;
+    padding: $spacing $spacing*2;
     border: none;
     border-radius: 5px;
     color: $color-five;

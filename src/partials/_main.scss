@@ -4,7 +4,7 @@
     .text-card-1 {
         width: calc((100% - 30px) / 3);
         height: 400px;
-        padding-right: $padding*3;
+        padding-right: $spacing*3;
     }
     .slider-container-1 {
         width: calc(((100% - 30px) / 3) * 2);
@@ -12,8 +12,33 @@
         .img-container-1 {
             width: calc((100% - 30px) /2);
             position: relative;
+            top: 0;
             img {
                 width: 100%;
+            }
+            .text-container-hover {
+                .text-card-slider-hover {
+                h1 {
+                    margin-bottom: $spacing;
+                    color: $color-one;
+                }
+                span {
+                    color: $color-one;
+                }
+                p {
+                    font-size: 20px;
+                    margin-top: $spacing*1.5;
+                    color: $color-one;
+                }
+                }
+            }
+            &:hover {
+                .text-container-hover {
+                    display: block;
+                }
+                img {
+                    filter: contrast(80%) brightness(80%);
+                }
             }
         }
     }
@@ -26,7 +51,7 @@
         position: relative;
         top: 0;
         .img-card-2 {
-            margin-top: $margin*2;
+            margin-top: $spacing*2;
             width: calc((100% - 80px) / 2);
             position: relative;
             top: 0;
@@ -43,44 +68,32 @@
             }
             .img-hover-container-2 {
                 display: none;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
+                @include width_height_max;
+                @include absolute_top;
                 .img-2-hover {
-                    width: 100%;
-                    height: 100%;
+                    @include width_height_max;
                     filter: contrast(60%) brightness(60%);
                     z-index: 0;
-                    margin-bottom: $margin*2;
+                    margin-bottom: $spacing*2;
                 }
                 .text-container-2 {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex_column;
                     flex-wrap: wrap;
                     justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    padding: $padding*4;
-                    position: absolute;
-                    top: 0;
+                    @include width_height_max;
+                    padding: $spacing*4;
+                    @include absolute_top;
                     h1 {
                         color: $color-one;
                     }
                     button {
-                        margin: 0 $margin*15;
+                        margin: 0 $spacing*15;
                         flex-shrink: 0;
                     }
                 }
-            }
-
-
-
-
-            
+            }            
         }
     }
-
 }
 // ///////////////////////////////////////////// - SECTION 3 - /////////////////////////////////////////////////////
 
@@ -91,13 +104,13 @@
     .text-card-3 {
         width: calc(100% / 4);
         height: 100%;
-        margin-right: $margin*5;
+        margin-right: $spacing*5;
         h1 {
             @include h1_small;
             color: $color-five;
         }
         button {
-            margin-top: $margin*2;
+            margin-top: $spacing*2;
         }    
     }
     .slider-container-3 {
@@ -111,8 +124,32 @@
                 width: 100%;
             }
             h4 {
-                margin: $margin*2 0;
+                margin: $spacing*2 0;
                 color: $color-five;
+            }
+            .text-container-hover {
+                .text-card-slider-hover {
+                h1 {
+                    margin-bottom: $spacing;
+                    color: $color-one;
+                }
+                span {
+                    color: $color-one;
+                }
+                p {
+                    font-size: 10px;
+                    margin-bottom: $spacing*6;
+                    color: $color-one;
+                }
+                }
+            }
+            &:hover {
+                .text-container-hover {
+                    display: block;
+                }
+                img {
+                    filter: contrast(80%) brightness(80%);
+                }
             }
         }
     }
@@ -126,15 +163,12 @@
             width: 100%;
             height: 550px;
             filter: contrast(60%) brightness(60%);
-            z-index: 0;
-            margin-bottom: $margin*2;
+            margin-bottom: $spacing*2;
         }
         .text-container-4 {
-            width: 100%;
-            height: 100%;
-            padding: $padding*4;
-            position: absolute;
-            top: 0;
+            @include width_height_max;
+            padding: $spacing*4;
+            @include absolute_top;
             h1 {
                 color: $color-one;
                 font-size: $font-size*4;
@@ -153,7 +187,7 @@
                 bottom: 60px;
                 max-width: 400px;
                 p {
-                    margin-bottom: $margin;
+                    margin-bottom: $spacing;
                 }
                 span {
                     color: $color-one;
@@ -188,14 +222,12 @@
             }
         }
         .text-card-4 {
-            position: absolute;
-            top: 0;
+            @include absolute_top;
             right: 0;
             width: calc(50% - 10px);
             height: 100%;
-            padding: $padding*6 $padding*4;
-            display: flex;
-            flex-direction: column;
+            padding: $spacing*6 $spacing*4;
+            @include flex_column;
             flex-flow: wrap;
             background-color: $color-four;
             h1 {
@@ -225,31 +257,27 @@
             background-color: $color-seven;
         }
         .contacts-container-5 {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-around;
-            margin-bottom: $margin*2;
+            @include start_space_around;
+            margin-bottom: $spacing*2;
         }
     }
 }
 // ///////////////////////////////////////////// - SECTION 6 - /////////////////////////////////////////////////////
 .section-6 {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @include space_between;
     flex-flow: wrap;
     img {
         width: calc(25% - 20px);
-        margin-bottom: $margin*2;
+        margin-bottom: $spacing*2;
     }
     .social-container-6 {
         width: 48.7%;
         background-color: $color-four;
-        margin: 0 $margin $margin*2 $margin;
-        padding: $padding*4 0;
-        display: flex;
+        margin: 0 $spacing $spacing*2 $spacing;
+        padding: $spacing*4 0;
+        @include flex_column;
         justify-content: space-around;
-        flex-direction: column;
         align-items: center;
     }
 }
@@ -264,19 +292,15 @@
         background-size: 115% 100%;
         background-position-x: -90px;
         filter: contrast(100%) brightness(90%);
-        z-index: 0;
     }
     .text-container-7 {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
+        @include width_height_max;
+        @include absolute_top;
         right: 0;
-        display: flex;
+        @include flex_column;
         align-items: flex-start;
         justify-content: center;
-        flex-direction: column;
-        padding-left: $padding*25;
+        padding-left: $spacing*25;
         h1 {
             @include h1_small;
             width: 450px;

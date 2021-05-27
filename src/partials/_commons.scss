@@ -15,12 +15,16 @@ html {
 }
 
 section {
-    margin: ($margin*15) 0 ($margin*5);
+    margin: ($spacing*15) 0 ($spacing*5);
 }
 
 p, span {
-    color: $color-three;
+    color: $color-nine;
     font-family: 'Work Sans', sans-serif;
+}
+
+.clearer {
+    color: $color-three;
 }
 
 p {
@@ -31,7 +35,7 @@ p {
 
 li {
     font-family: 'Work Sans', sans-serif;
-    padding-bottom: $padding;
+    padding-bottom: $spacing;
     &:hover {
         border-bottom: solid 1px $color-five;
     }
@@ -39,7 +43,7 @@ li {
 
 h1 {
     font-family: 'Lora', serif;
-    margin: $margin*2 0 $margin*3;
+    margin: $spacing*2 0 $spacing*3;
     color: $color-five;
 }
 
@@ -55,6 +59,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 .chevron-left {
     left: 0;
@@ -65,6 +70,54 @@ ul {
         list-style: none;
         color: $color-five;
         li {
-            margin-right: $margin*2;
+            margin-right: $spacing*2;
         }
+}
+
+.text-container-hover {
+    display: none;
+    .text-card-slider-hover {
+    @include absolute_top;
+    @include width_height_max;
+    @include flex_column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.fixed-container {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 999;
+    .fixed-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $color-one;
+        margin-top: 5px;
+        padding: $spacing*0.5;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 20px 5px #9C9C9C;
+        -moz-box-shadow: 0px 0px 20px 5px #9C9C9C;
+        -o-box-shadow: 0px 0px 20px 5px #9C9C9C;
+        box-shadow: 0px 0px 20px 5px #9C9C9C;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        color: $color-eighteen;
+        img {
+            width: 30px;
+        }
+        h2, h4 {
+            color: $color-twentyfour;
+        }
+        h4 {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    }
 }
